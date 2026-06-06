@@ -1,0 +1,5 @@
+Podejściem w pełni "reaktowym" (idiomatycznym) jest Podejście B, nazywane komponentem kontrolowanym. W React dąży się do tego, aby to stan aplikacji był jedynym źródłem prawdy dla interfejsu, a nie drzewo DOM przeglądarki.
+
+Zaletą Podejścia A (komponent niekontrolowany) jest wyższa wydajność, ponieważ komponent nie renderuje się ponownie przy każdym naciśnięciu klawisza. Kod jest prostszy, bardziej zbliżony do czystego HTML-a i idealnie sprawdza się w prostych formularzach, gdzie dane są potrzebne dopiero w momencie ich wysłania.
+
+Zaletą Podejścia B (komponent kontrolowany) jest natychmiastowy dostęp do danych w stanie. Umożliwia to dynamiczną walidację pól w czasie rzeczywistym (np. sprawdzanie poprawności e-maila w trakcie pisania), blokowanie przycisku "Wyślij", dopóki formularz jest niepoprawny, oraz łatwe czyszczenie lub nadpisywanie wartości pól z poziomu kodu.
